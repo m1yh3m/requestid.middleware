@@ -23,5 +23,5 @@ req
 
 ```
 
-The default branch is `develop`.
+The default branch is `dev`.
 
