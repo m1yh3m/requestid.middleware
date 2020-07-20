@@ -22,3 +22,6 @@ req
 }
 
 ```
+
+The default branch is `develop`.
+
