@@ -1,4 +1,4 @@
-const lib = require('../index')
+const lib = require('./requestid.middleware')
 
 describe('requestID.middleware', () => {
   it('is a function of arity 2', () => {
