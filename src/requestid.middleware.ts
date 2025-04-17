@@ -1,5 +1,5 @@
 import { generate } from '@m1yh3m/random.bytes';
-import { Request } from 'express';
+import { Request, Response } from 'express';
 
 const REQUEST_ID_HEADER_KEY = 'X-REQUEST-ID';
 

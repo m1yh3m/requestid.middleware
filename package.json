@@ -1,6 +1,6 @@
 {
   "name": "@m1yh3m/requestid.middleware",
-  "version": "2025.04.00",
+  "version": "2025.04.01",
   "description": "An express middleware that adds a request id to req object",
   "main": "src/requestid.middleware.js",
   "scripts": {
