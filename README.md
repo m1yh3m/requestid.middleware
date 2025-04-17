@@ -3,11 +3,10 @@
 node module
 
 ```javascript
-
-const requestid = require('@m1yh3m/requestid.middleware')
+import { requestid } from '@m1yh3m/requestid.middleware';
 
 // express is require('express') or ()
-express().use(requestid)
+express().use(requestid);
 
 
 // after adding the middleware request object looks like:
@@ -25,3 +24,8 @@ req
 
 The default branch is `main`.
 
+## License
+
+MIT License
+
+Copyright (c) 2019-2025 Anubhav Saini

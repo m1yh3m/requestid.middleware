@@ -1,10 +1,11 @@
 {
   "name": "@m1yh3m/requestid.middleware",
-  "version": "2021.1.1",
+  "version": "2025.04.00",
   "description": "An express middleware that adds a request id to req object",
   "main": "src/requestid.middleware.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "./node_modules/.bin/jasmine",
+    "build": "./node_modules/.bin/tsc --project tsconfig.json"
   },
   "keywords": [
     "express-middleware",
@@ -16,12 +17,14 @@
   "author": "m1yh3m",
   "license": "MIT",
   "devDependencies": {
-    "@types/jasmine": "^3.6.3",
-    "@types/node": "^14.14.22",
-    "jasmine": "^3.6.4"
+    "@types/express": "^5.0.1",
+    "@types/jasmine": "^5.1.7",
+    "@types/node": "^22.14.1",
+    "jasmine": "^5.6.0",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@m1yh3m/random.bytes": "^2021.1.1"
+    "@m1yh3m/random.bytes": "^2025.4.0"
   },
   "repository": {
     "type": "git",
