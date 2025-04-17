@@ -1,3 +1,4 @@
+import { Request } from "express";
 import { requestid } from "./requestid.middleware";
 
 describe("requestID.middleware", () => {
@@ -6,7 +7,7 @@ describe("requestID.middleware", () => {
         expect(requestid.length).toBe(3);
     });
     it("middleware works and calls next()", (done) => {
-        const req = {} as any;
+        const req = { headers: {} } as any;
         const res = {} as any;
         const next = () => {
             expect(req?.ids?.requestid).toEqual(req?.headers["X-REQUEST-ID"]);
@@ -17,7 +18,7 @@ describe("requestID.middleware", () => {
 
     ; ([null, undefined]).forEach((res: any) => {
         it(`response can be ${res}`, (done) => {
-            const req = {} as any;
+            const req = { headers: {} } as any;
             const next = () => {
                 expect(res).toBeFalsy();
                 done();

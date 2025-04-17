@@ -7,7 +7,7 @@ describe("requestID.middleware", () => {
         expect(requestid_middleware_1.requestid.length).toBe(3);
     });
     it("middleware works and calls next()", (done) => {
-        const req = {};
+        const req = { headers: {} };
         const res = {};
         const next = () => {
             expect(req?.ids?.requestid).toEqual(req?.headers["X-REQUEST-ID"]);
@@ -18,7 +18,7 @@ describe("requestID.middleware", () => {
     ;
     ([null, undefined]).forEach((res) => {
         it(`response can be ${res}`, (done) => {
-            const req = {};
+            const req = { headers: {} };
             const next = () => {
                 expect(res).toBeFalsy();
                 done();
